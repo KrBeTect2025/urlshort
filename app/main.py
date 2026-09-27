@@ -72,6 +72,7 @@ def redirect(short_code: str, request: Request):
         if not entry:
             raise HTTPException(status_code=404, detail="short url arent found")
         long_url = entry["long_url"]
+        assert isinstance(long_url, str)
         cache.set(short_code, long_url, ex=3600)
 
     assert isinstance(long_url, str)
