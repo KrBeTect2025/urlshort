@@ -87,6 +87,4 @@ curl -X POST http://127.0.0.1:8000/shorten \
 
 Contributions, issues, and feature requests are welcome. Fork the repo, create a branch, and open a pull request.
 
-## License
 
-TODO: choose a license (MIT is a common default for personal projects).
